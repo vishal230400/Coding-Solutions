@@ -50,8 +50,7 @@ public class Solution {
                 }
             }
             System.out.println(posX+" "+posY);
-
-            sc.close();
         }
+        sc.close();
     }
 }
