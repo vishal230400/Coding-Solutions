@@ -11,10 +11,10 @@ public class CodeForces {
         String platform= "codeforces";
         System.out.println("Enter the question number");
         String str= sc.next();
-        File file=new File("./src/com/vishal"+platform+"/Q"+str.substring(0,str.length()-1)+"/Q"+str);
-        String javaFileName = "./src/com/vishal"+platform+"/Q" + str.substring(0, str.length() - 1) + "/Q" + str + "/Solution" + str + ".java";
+        File file=new File("./src/com/vishal/"+platform+"/Q"+str.substring(0,str.length()-1)+"/Q"+str);
+        String javaFileName = "./src/com/vishal/"+platform+"/Q" + str.substring(0, str.length() - 1) + "/Q" + str + "/Solution" + str + ".java";
         File javaFile=new File(javaFileName);
-        String readMeName = "./src/com/vishal"+platform+"/Q" + str.substring(0, str.length() - 1) + "/Q" + str + "/README.md";
+        String readMeName = "./src/com/vishal/"+platform+"/Q" + str.substring(0, str.length() - 1) + "/Q" + str + "/README.md";
         File readMeFile=new File(readMeName);
         boolean dir=file.mkdirs();
         boolean javaCreated=javaFile.createNewFile();
@@ -25,7 +25,7 @@ public class CodeForces {
         if(javaCreated)
         {
             FileWriter myWriter = new FileWriter(javaFileName);
-            myWriter.write("package com.vishal"+platform+".Q"+str.substring(0,str.length()-1)+".Q"+str+";\n\n" +
+            myWriter.write("package com.vishal."+platform+".Q"+str.substring(0,str.length()-1)+".Q"+str+";\n\n" +
                     "import java.util.*;\n" +
                     "\n" +
                     "public class Solution"+str+" {\n" +
