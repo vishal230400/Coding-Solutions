@@ -20,6 +20,7 @@ public class Solution266B {
                 }
             }
         }
-        System.out.println(stringBuilder.toString());
+        System.out.println(stringBuilder);
+        sc.close();
     }
 }

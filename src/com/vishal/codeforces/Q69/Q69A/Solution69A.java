@@ -23,5 +23,6 @@ public class Solution69A {
         else {
             System.out.println("NO");
         }
+        sc.close();
     }
 }

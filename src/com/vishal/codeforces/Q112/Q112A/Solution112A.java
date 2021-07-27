@@ -14,5 +14,6 @@ public class Solution112A {
         if (result>0)
             result=1;
         System.out.println(result);
+        sc.close();
     }
 }

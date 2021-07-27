@@ -24,5 +24,6 @@ public class Solution160A {
             }
         }
         System.out.println(i+1);
+        sc.close();
     }
 }

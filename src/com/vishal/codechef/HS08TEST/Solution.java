@@ -19,5 +19,6 @@ public class Solution {
         else{
             System.out.println(y-(x+0.50));
         }
+        sc.close();
     }
 }

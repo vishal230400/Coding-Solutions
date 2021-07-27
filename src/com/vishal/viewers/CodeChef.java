@@ -28,7 +28,7 @@ public class CodeChef {
         System.out.println("Enter the inputs for " + str);
         String className = "com.vishal." + platform  + "."+str+ ".Solution";
         Class.forName(className).getMethod("main", String[].class).invoke(null, (Object) null);
-
+        sc.close();
     }
 
 }

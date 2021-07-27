@@ -21,5 +21,6 @@ public class Solution263A {
             }
         }
         System.out.println(Math.abs(i_index-2)+Math.abs(j_index-2));
+        sc.close();
     }
 }

@@ -9,5 +9,6 @@ public class Solution50A {
         int n      = sc.nextInt();
         int m=sc.nextInt();
         System.out.println((m*n)/2);
+        sc.close();
     }
 }

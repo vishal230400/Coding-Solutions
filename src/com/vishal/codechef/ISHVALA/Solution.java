@@ -35,6 +35,7 @@ public class Solution {
             hor += (m - tempHor)/s;
             System.out.println(ver*hor);
         }
+        sc.close();
     }
 
 }

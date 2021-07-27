@@ -32,5 +32,6 @@ public class Solution110A {
         }else {
             System.out.println("NO");
         }
+        sc.close();
     }
 }

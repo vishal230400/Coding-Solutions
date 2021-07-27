@@ -19,5 +19,7 @@ public class Solution1A {
             m_a=1;
         }
         System.out.println(((n/a)+n_a)*((m/a)+m_a));
+
+        sc.close();
     }
 }

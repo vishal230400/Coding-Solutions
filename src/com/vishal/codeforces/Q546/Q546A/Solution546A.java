@@ -12,6 +12,6 @@ public class Solution546A {
 
         int borrow=w*(w+1)*k/2-n;
         System.out.println(Math.max(borrow,0));
-
+        sc.close();
     }
 }

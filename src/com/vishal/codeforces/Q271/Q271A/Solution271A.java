@@ -31,5 +31,6 @@ public class Solution271A {
             }
         }
         System.out.println(n);
+        sc.close();
     }
 }

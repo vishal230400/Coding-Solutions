@@ -25,5 +25,6 @@ public class Solution734A {
         }else {
             System.out.println("Danik");
         }
+        sc.close();
     }
 }

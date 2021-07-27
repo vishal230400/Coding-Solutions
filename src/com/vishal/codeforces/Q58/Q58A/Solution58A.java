@@ -26,5 +26,6 @@ public class Solution58A {
         }else {
             System.out.println("NO");
         }
+        sc.close();
     }
 }

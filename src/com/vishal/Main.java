@@ -14,5 +14,6 @@ public class Main {
             String className = "com.vishal.viewers.CodeForces";
             Class.forName(className).getMethod("main", String[].class).invoke(null, (Object) null);
         }
+        sc.close();
     }
 }

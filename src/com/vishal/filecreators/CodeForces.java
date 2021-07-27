@@ -33,6 +33,7 @@ public class CodeForces {
                     "    public static void main(String[] args) {\n" +
                     "        Scanner sc = new Scanner(System.in);\n" +
                     "        int n      = sc.nextInt();\n" +
+                    "        sc.close();" +
                     "    }\n" +
                     "}");
             myWriter.close();
@@ -74,5 +75,6 @@ public class CodeForces {
             myWriter.write(String.valueOf(s));
             myWriter.close();
         }
+        sc.close();
     }
 }

@@ -32,6 +32,7 @@ public class Solution {
                 root = delete(root,data,true);
             }
         }
+        sc.close();
     }
 
     public static Node insert(Node root,long data,long pos)

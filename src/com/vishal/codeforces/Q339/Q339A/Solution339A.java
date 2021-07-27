@@ -13,5 +13,6 @@ public class Solution339A {
         Arrays.sort(a);
         String b=valueOf(a).replaceAll("(?i)([0-9])","$1+");
         System.out.println(b.substring(0,b.length()-1));
+        sc.close();
     }
 }

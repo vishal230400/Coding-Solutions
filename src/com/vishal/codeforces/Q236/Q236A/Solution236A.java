@@ -17,5 +17,6 @@ public class Solution236A {
         else {
             System.out.println("IGNORE HIM!");
         }
+        sc.close();
     }
 }

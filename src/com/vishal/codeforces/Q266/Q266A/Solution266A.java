@@ -17,5 +17,6 @@ public class Solution266A {
             }
         }
         System.out.println(count);
+        sc.close();
     }
 }

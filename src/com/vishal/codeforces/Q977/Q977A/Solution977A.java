@@ -26,5 +26,6 @@ public class Solution977A {
             }
         }
         System.out.println(n);
+        sc.close();
     }
 }

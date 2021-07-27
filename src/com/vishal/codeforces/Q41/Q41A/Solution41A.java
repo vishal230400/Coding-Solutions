@@ -15,5 +15,6 @@ public class Solution41A {
         }else {
             System.out.println("NO");
         }
+        sc.close();
     }
 }

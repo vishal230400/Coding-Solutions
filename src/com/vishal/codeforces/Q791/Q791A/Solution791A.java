@@ -16,5 +16,6 @@ public class Solution791A {
             i++;
         }
         System.out.println(i);
+        sc.close();
     }
 }

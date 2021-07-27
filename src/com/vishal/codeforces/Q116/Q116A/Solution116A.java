@@ -16,5 +16,6 @@ public class Solution116A {
             max=Math.max(max,count);
         }
         System.out.println(max);
+        sc.close();
     }
 }

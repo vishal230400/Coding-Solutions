@@ -20,5 +20,6 @@ public class Solution122A {
         } else {
             System.out.println("NO");
         }
+        sc.close();
     }
 }

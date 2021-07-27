@@ -16,5 +16,6 @@ public class Solution231A {
             count+=(a+b+c)/2;
         }
         System.out.println(count);
+        sc.close();
     }
 }

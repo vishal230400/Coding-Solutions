@@ -26,5 +26,6 @@ public class Solution59A {
         else {
             System.out.println(str.toUpperCase(Locale.ROOT));
         }
+        sc.close();
     }
 }

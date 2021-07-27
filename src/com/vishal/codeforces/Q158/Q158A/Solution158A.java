@@ -15,5 +15,6 @@ public class Solution158A {
         }
         arrayList.removeIf(integer -> (integer < arrayList.get(k-1))||integer==0);
         System.out.println(arrayList.size());
+        sc.close();
     }
 }
