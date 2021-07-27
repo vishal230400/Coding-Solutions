@@ -34,8 +34,8 @@ public class CodeChef {
                     "    public static void main(String[] args) {\n" +
                     "        Scanner sc = new Scanner(System.in);\n" +
                     "        int n      = sc.nextInt();\n" +
-                    "        sc.close();" +
-                    "}\n" +
+                    "        sc.close();\n" +
+                    "   }\n" +
                     "}");
             myWriter.close();
         }

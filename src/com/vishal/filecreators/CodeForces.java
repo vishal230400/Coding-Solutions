@@ -33,7 +33,7 @@ public class CodeForces {
                     "    public static void main(String[] args) {\n" +
                     "        Scanner sc = new Scanner(System.in);\n" +
                     "        int n      = sc.nextInt();\n" +
-                    "        sc.close();" +
+                    "        sc.close();\n" +
                     "    }\n" +
                     "}");
             myWriter.close();
