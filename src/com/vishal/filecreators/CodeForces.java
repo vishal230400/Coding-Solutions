@@ -1,10 +1,10 @@
-package com.vishal;
+package com.vishal.filecreators;
 
 import java.io.*;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class FileCreatorCodeForces {
+public class CodeForces {
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
         int i=0;
