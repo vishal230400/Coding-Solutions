@@ -25,7 +25,7 @@ public class CodeForces {
         }
         br.close();
 
-        System.out.println("Enter the inputs for" + str);
+        System.out.println("Enter the inputs for " + str);
         String className = "com.vishal." + platform + ".Q" + str.substring(0, str.length() - 1) + ".Q" + str + ".Solution" + str;
         Class.forName(className).getMethod("main", String[].class).invoke(null, (Object) null);
 
