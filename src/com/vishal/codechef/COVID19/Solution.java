@@ -9,9 +9,9 @@ public class Solution {
         int t=sc.nextInt();
         for(int i=0;i<t;i++)
         {
-            int n=sc.nextInt(),cnt,min=10,max=1;
+            int n=sc.nextInt(),count,min=10,max=1;
             int []a=new int[n];
-            cnt=1;
+            count=1;
             for(int j=0;j<n;j++)
             {
                 a[j]=sc.nextInt();
@@ -19,20 +19,20 @@ public class Solution {
             for(int k=0;k<n-1;k++)
             {
                 if((a[k+1]-a[k])<=2)
-                    cnt++;
+                    count++;
                 else
                 {
-                    if(min>cnt)
-                        min=cnt;
-                    if(max<cnt)
-                        max=cnt;
-                    cnt=1;
+                    if(min>count)
+                        min=count;
+                    if(max<count)
+                        max=count;
+                    count=1;
                 }
             }
-            if (min>cnt)
-                min=cnt;
-            if(max<cnt)
-                max=cnt;
+            if (min>count)
+                min=count;
+            if(max<count)
+                max=count;
             System.out.println(min + " " + max);
         }
     }
