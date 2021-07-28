@@ -8,7 +8,6 @@ import java.util.Scanner;
 public class CodeChef {
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
-        int i=0;
         String platform= "codechef";
         System.out.println("Enter the question number");
         String str= sc.next();

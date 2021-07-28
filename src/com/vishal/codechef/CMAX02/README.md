@@ -1,0 +1,3 @@
+# Question Code : CMAX02
+
+laddin entered a Magical Cave. There, he found two different creatures. One was Genie, which had power of giving Alice some magic stones. Other was Razoul, who doesn't like Aladdin at all and always wants to steal few magic stones from Alice. Both Genie and Razoul have a set of distinct non-negative integers with them such that there is no such integer which is common to both the sets. Genie will give 3^x magicl stones to Aladdin for every x present in the set Genie has. While Razoul will steal 3^x magical stones from Aladdin for every x present in the set Razoul has. Now, Aladdin wants you to tell him what sets should Genie and Razoul should have such that Aladdin has exactly n magical stones with him when he leaves the cave.
