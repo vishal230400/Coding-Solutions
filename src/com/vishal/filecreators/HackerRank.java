@@ -10,7 +10,7 @@ public class HackerRank {
         Scanner sc = new Scanner(System.in);
         String platform= "hackerrank";
         System.out.println("Enter the question number");
-        String str= sc.nextLine().replaceAll(" ","");
+        String str= sc.nextLine().replaceAll("[^A-Za-z0-9 -]","");
         File file=new File("./src/com/vishal/"+platform+"/"+str);
         String javaFileName = "./src/com/vishal/"+platform+"/"+str+ "/Solution.java";
         File javaFile=new File(javaFileName);
