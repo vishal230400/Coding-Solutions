@@ -11,7 +11,7 @@ public class HackerRank {
         Scanner sc = new Scanner(System.in);
         String platform="hackerrank";
         System.out.println("Enter the " + platform + " Question Name:");
-        String str = sc.next();
+        String str= sc.nextLine().replaceAll(" ","");
         BufferedReader br = new BufferedReader(new FileReader("./src/com/vishal/" + platform + "/" +str + "/README.md"));
         String buffer;
         while ((buffer = br.readLine()) != null) {

@@ -1,4 +1,4 @@
-package com.vishal.hackerrank.Simple;
+package com.vishal.hackerrank.SimpleArraySum;
 
 import java.io.*;
 import java.util.*;
@@ -27,7 +27,7 @@ class Result {
 public class Solution {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+        BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(System.out));
 
         int arCount = Integer.parseInt(bufferedReader.readLine().trim());
 
