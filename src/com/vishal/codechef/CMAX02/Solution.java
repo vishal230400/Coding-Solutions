@@ -25,11 +25,12 @@ public class Solution {
             StringBuilder rem1=new StringBuilder();
             for(int i=0;i<rem.size();i++)
             {
+                String str=i+" ";
                 if(rem.get(i).equals(0))
-                    rem0.append(i+" ");
+                    rem0.append(str);
                 else if(rem.get(i).equals(1))
                 {
-                    rem1.append(i+" ");
+                    rem1.append(str);
                 }
             }
             System.out.println(rem0);
