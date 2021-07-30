@@ -1,6 +1,8 @@
 package com.vishal.hackerrank.ArraysLeftRotation;
 
 import java.io.*;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -18,21 +20,22 @@ class Result {
      *  2. INTEGER d
      */
 
-
-    static void leftRotatebyOne(List<Integer> arr, int n)
-    {
-        int i, temp;
-        temp = arr.get(0);
-        for (i = 0; i < n - 1; i++)
-            arr.set(i,arr.get(i+1));
-        arr.set(n-1,temp);
-    }
     public static List<Integer> rotLeft(List<Integer> a, int d) {
         // Write your code here
-        for (int i = 0; i < d; i++)
-            leftRotatebyOne(a, a.size());
+        int length = a.size();
+        int j = 0;
+        List<Integer>temp=new ArrayList<>();
 
-        return a;
+        for(int i = d; i < length; i++, j++) {
+            temp.add(a.get(i));
+        }
+        if(j < length) {
+            for(int i = 0; i < d; i++, j++) {
+                temp.add(a.get(i));
+            }
+        }
+
+        return temp;
     }
 
 }
