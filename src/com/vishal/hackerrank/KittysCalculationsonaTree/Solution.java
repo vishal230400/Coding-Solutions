@@ -7,11 +7,11 @@ public class Solution {
 
     static final long MOD = 1_000_000_007;
 
-    static int mul(long x, long y, long z) {
+    static int mult(long x, long y, long z) {
         return (int) ((((x * y) % MOD) * z) % MOD);
     }
 
-    static int mul(long x, long y) {
+    static int mult(long x, long y) {
         return (int) ((x * y) % MOD);
     }
 
@@ -169,10 +169,10 @@ public class Solution {
                 node.start = false;
             } else {
                 if (node.count > 1) {
-                    node.tot = sum(node.tot, mul(node.sumNode, node.parzialInv), MOD - node.parz2);
-                    node.parzialInv = sum(node.parzialInv, mul(node.count-1, node.sumNode));
+                    node.tot = sum(node.tot, mult(node.sumNode, node.parzialInv), MOD - node.parz2);
+                    node.parzialInv = sum(node.parzialInv, mult(node.count-1, node.sumNode));
                 } else {
-                    node.tot = sum(node.tot, mul(node.sumNode, node.parzialInv), MOD - node.parz2);
+                    node.tot = sum(node.tot, mult(node.sumNode, node.parzialInv), MOD - node.parz2);
                 }
                 if (isSet[node.u]) {
                     node.sumNode += node.u+1;
@@ -181,9 +181,9 @@ public class Solution {
                     NodeDfs nodeP = node.parent;
                     nodeP.sumNode = sum(nodeP.sumNode, node.sumNode);
                     nodeP.parzialInv = sum(nodeP.parzialInv, node.parzialInv, node.sumNode);
-                    nodeP.parz2 = sum(nodeP.parz2, mul(node.parzialInv + node.sumNode, node.sumNode));
+                    nodeP.parz2 = sum(nodeP.parz2, mult(node.parzialInv + node.sumNode, node.sumNode));
                     if (isSet[nodeP.u]) {
-                        nodeP.tot = sum(nodeP.tot, node.tot, mul(node.sumNode + node.parzialInv, (nodeP.u + 1)));
+                        nodeP.tot = sum(nodeP.tot, node.tot, mult(node.sumNode + node.parzialInv, (nodeP.u + 1)));
                     } else {
                         nodeP.tot = sum(nodeP.tot, node.tot);
                     }
@@ -253,7 +253,7 @@ public class Solution {
                         int y = set[j];
                         int z = lowestCommonAncestor(x, y);
                         int dist = dep[y] + dep[x] - 2 * dep[z];
-                        result = sum(result, mul(x + 1, y + 1, dist));
+                        result = sum(result, mult(x + 1, y + 1, dist));
                     }
                 }
             } else {
